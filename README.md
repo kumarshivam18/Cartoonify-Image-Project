@@ -1,7 +1,3 @@
-Certainly! Here's a more professional version of the README file:
-
----
-
 # Image Cartoonifier
 
 This repository contains a Python script that converts images into a cartoon-like effect using OpenCV. The process involves edge detection, color quantization, and bilateral filtering to produce the final cartoon effect.
@@ -9,11 +5,9 @@ This repository contains a Python script that converts images into a cartoon-lik
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Methodology](#methodology)
 - [Examples](#examples)
-- [License](#license)
 - [Acknowledgements](#acknowledgements)
 
 ## Installation
@@ -27,24 +21,17 @@ Ensure you have Python 3.x installed. You can download it from [python.org](http
 Install the required packages using pip:
 
 ```sh
-pip install opencv-python-headless numpy
+ py -m pip install opencv-contrib-python.
 ```
 
 ## Usage
 
-1. **Clone the repository:**
+1. **Place the image you want to cartoonify in the project directory.**
 
-   ```sh
-   git clone <repository-url>
-   cd <repository-directory>
-   ```
-
-2. **Place the image you want to cartoonify in the project directory.**
-
-3. **Modify the script to use your image file name:**
+2. **Modify the script to use your image file name:**
 
    ```python
-   img = read_img('./your_image.jpg')
+   img = read_img('./flower.jpg')
    ```
 
 4. **Run the script:**
@@ -59,7 +46,8 @@ pip install opencv-python-headless numpy
 
 - `cartoonify.py`: Main script for cartoonifying an image.
 - `README.md`: Project documentation.
-- `requirements.txt`: List of dependencies.
+- `flower.jpg.`: Input image.
+- `cartoon.jpg.`: Output image.
 
 ## Methodology
 
@@ -126,14 +114,7 @@ cv2.imwrite('cartoon.jpg', cartoon)
 
 ![Cartoon](./cartoon.jpg)
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Acknowledgements
 
 This project uses the OpenCV library for image processing. Special thanks to the OpenCV community for their extensive documentation and support.
 
----
-
-Feel free to adjust any section according to your specific needs or preferences!
